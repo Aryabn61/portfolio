@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f1bb;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin-top: 5px;
+    color: black;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+.edu {
+    padding: 15px;
+    background-color: #9bc1bc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.projects{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.spider{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.BIM{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.Race{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+.role{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    gap: 20px;
+}
+.carousel {
+    width: 700px;
+    overflow: hidden;
+    margin: 20px auto;  
+    display: flex;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.carousel-track {
+    display: flex;
+    flex-direction: row;
+    width: calc(1000px * 2); 
+    gap: 10px;
+    animation: slide 6s ease-in-out infinite;
+}
+
+
+.carousel-track img {
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+.bad{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f4f1bb;
+
+}
+.foot{
+    display: flex;
+    background-color: #f4f1bb;
+    flex-direction: column;
+    text-align: center;
+}
+@keyframes slide {
+    0%, 50% { transform: translateX(0); }
+   
+    55%, 95% { transform: translateX(-710px); }
+    
+    100% { transform: translateX(0px); }
+}
